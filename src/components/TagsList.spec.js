@@ -1,3 +1,14 @@
 import React from 'react'
-import Tagslist from '.TagsList'
+import TagsList from '../components/TagsList'
 import renderer from 'react-test-renderer'
+
+describe('The tags list', ()=> {
+  it('renders as expected', ()=>{
+    const tree = renderer
+      .create(<TagsList tags={['css','html','go']} />)
+      .toJSON()
+
+    console.log(tree)
+    expect(tree).toMatchSnapshot()
+  })
+})
