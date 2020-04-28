@@ -9,7 +9,7 @@ exports[`The tags list renders as expected 1`] = `
     html
   </code>
   <code>
-    go
+    swift
   </code>
 </div>
 `;
